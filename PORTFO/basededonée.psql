@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS Me (
+    id SERIAL PRIMARY KEY,
+    Firstname VARCHAR(255),
+    Lastname VARCHAR(255),
+    Email VARCHAR(255),
+    Phone INT,
+    Address VARCHAR(255),
+    City VARCHAR(255),
+    Country VARCHAR(255),
+    Birth_date DATE,
+    Description VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS Projet (
+    id SERIAL PRIMARY KEY,
+    Title VARCHAR(255),
+    Description VARCHAR(255),
+    Picture VARCHAR(255),
+    Date_created DATE,
+    Date_update DATE,
+    Active BOOLEAN
+);
